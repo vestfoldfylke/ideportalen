@@ -222,8 +222,8 @@
                     "elmType": "div",
                     "style": {
                       "display": "table-cell",
-                      "background-color": "=if([$Fremdrift]=='Ikke påbegynt','#D3D3D3',if([$Fremdrift]=='25%','#FFB266',if([$Fremdrift]=='50%','#FFFF66',if([$Fremdrift]=='75%','#B2FF66',if([$Fremdrift]=='Fullført','#66FF66','blue')))))",
-                      "width": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%', if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='Fullført','100%','0%')))))",
+                      "background-color": "=if([$Fremdrift]=='Ikke påbegynt','#D3D3D3',if([$Fremdrift]=='25%','#FFB266',if([$Fremdrift]=='50%','#FFFF66',if([$Fremdrift]=='75%','#B2FF66',if([$Fremdrift]=='100%','#66FF66','blue')))))",
+                      "width": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%', if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='100%','100%','0%')))))",
                       "height": "20px",
                       "border-radius": "100px",
                       "vertical-align": "middle",
@@ -236,7 +236,7 @@
                     "style": {
                       "position": "absolute",
                       "top": "5px",
-                      "left": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%',if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='Fullført','100%','0%')))))",
+                      "left": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%',if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='100%','100%','0%')))))",
                       "background-color": "black",
                       "border-radius": "50%",
                       "height": "10px",
@@ -259,7 +259,7 @@
                       "font-weight": "600",
                       "color": "black"
                     },
-                    "txtContent": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%',if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='Fullført','Fullført','0%')))))"
+                    "txtContent": "=if([$Fremdrift]=='Ikke påbegynt','0%',if([$Fremdrift]=='10%','10%',if([$Fremdrift]=='25%','25%',if([$Fremdrift]=='50%','50%',if([$Fremdrift]=='75%','75%',if([$Fremdrift]=='100%','100%','0%')))))"
                   }
                 ]
               }
