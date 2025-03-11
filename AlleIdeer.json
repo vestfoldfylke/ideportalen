@@ -146,7 +146,7 @@
                   "role": "heading",
                   "aria-level": "3"
                 },
-                "txtContent": "=if ([$Title] == '', '–', [$Title])"
+                "txtContent": "=if([$Title] == '', '–', [$Title])"
               }
             ]
           },
@@ -162,7 +162,7 @@
                   "title": "[$Beskrivelse]",
                   "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-multiline"
                 },
-                "txtContent": "=if ([$Beskrivelse] == '', '–', [$Beskrivelse])",
+                "txtContent": "=if([$Beskrivelse] == '', '–', [$Beskrivelse])",
                 "style": {
                   "-webkit-line-clamp": "2",
                   "height": "80px"
@@ -271,6 +271,13 @@
               "class": "sp-card-previewColumnContainer"
             },
             "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "Oppfølgingsansvarlig"
+              },
               {
                 "elmType": "div",
                 "style": {
