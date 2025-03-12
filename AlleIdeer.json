@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
-  "height": 430,
+  "height": 390,
   "width": 254,
   "hideSelection": false,
   "fillHorizontally": true,
@@ -125,7 +125,7 @@
                     "style": {
                       "display": "=if(length([$Author]) == 1, '', 'none')"
                     },
-                    "defaultHoverField": "[$Author]",
+                    "defaultHoverField": "[$personIterator]",
                     "txtContent": "[$Author.title]"
                   }
                 ]
@@ -139,59 +139,14 @@
             },
             "children": [
               {
-                "elmType": "div",
-                "style": {
-                  "display": "flex",
-                  "justify-content": "space-between",
-                  "align-items": "center"
+                "elmType": "p",
+                "attributes": {
+                  "title": "[$Title]",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-highlightedContent",
+                  "role": "heading",
+                  "aria-level": "3"
                 },
-                "children": [
-                  {
-                    "elmType": "p",
-                    "attributes": {
-                      "title": "[$Title]",
-                      "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-highlightedContent",
-                      "role": "heading",
-                      "aria-level": "3"
-                    },
-                    "txtContent": "=if([$Title] == '', '–', [$Title])"
-                  },
-                  {
-                    "elmType": "div",
-                    "attributes": {
-                      "class": "sp-card-lastTextColumnContainer"
-                    },
-                    "children": [
-                      {
-                        "elmType": "p",
-                        "attributes": {
-                          "class": "ms-fontColor-neutralSecondary sp-card-label"
-                        },
-                        "txtContent": "[!LikesCount.DisplayName]"
-                      },
-                      {
-                        "elmType": "p",
-                        "attributes": {
-                          "title": "[$LikesCount]",
-                          "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-likes"
-                        },
-                        "children": [
-                          {
-                            "elmType": "span",
-                            "attributes": {
-                              "class": "sp-card-heartIcon",
-                              "iconName": "=if (length(removeFrom([$LikedBy.email],@me)) == length([$LikedBy]), 'Heart', 'HeartFill')"
-                            }
-                          },
-                          {
-                            "elmType": "span",
-                            "txtContent": "=if ([$LikesCount] == '', 0, [$LikesCount])"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "txtContent": "=if([$Title] == '', '–', [$Title])"
               }
             ]
           },
@@ -415,7 +370,7 @@
                     "style": {
                       "display": "=if(length([$Oppf_x00f8_lgingsansvarlig]) == 1, '', 'none')"
                     },
-                    "defaultHoverField": "[$Oppf_x00f8_lgingsansvarlig]",
+                    "defaultHoverField": "[$personIterator]",
                     "txtContent": "[$Oppf_x00f8_lgingsansvarlig.title]"
                   }
                 ]
