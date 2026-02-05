@@ -8,14 +8,6 @@
         "padding": "10px"
     },
     "children": [
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
                 {
                     "elmType": "span",
                     "style": {
@@ -28,401 +20,433 @@
                     "elmType": "span",
                     "txtContent": "[$ID]"
                 }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Navn på idé:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Title]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Sendt inn av:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Author.title]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Sektor:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Sektor]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Sendt inn:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Created]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Sektoransvarlig:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Sektoransvarlig.title]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "8px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Ansvarlig for oppfølging:"
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": "[$Oppf_x00f8_lgingsansvarlig.title]"
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "align-items": "center",
-                "margin-bottom": "0px"
-            },
-            "children": [
-                {
-                    "elmType": "span",
-                    "style": {
-                        "font-weight": "bold",
-                        "margin-right": "5px"
-                    },
-                    "txtContent": "Fremdrift: "
-                },
-                {
-                    "elmType": "span",
-                    "txtContent": ""
-                }
-            ]
-        },
-        {
-            "elmType": "div",
-            "style": {
-                "display": "flex",
-                "flex-direction": "column",
-                "margin-bottom": "8px",
-                "margin-left": "20px"
-            },
-            "children": [
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
                         {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
+                            {
+                                "elmType": "span",
+                                "style": {
+                                    "font-weight": "bold",
+                                    "margin-right": "5px"
+                                },
+                                "txtContent": "Navn på idé:"
                             },
-                            "txtContent": "●"
-                        },
+                            {
+                                "elmType": "span",
+                                "txtContent": "[$Title]"
+                            }
+                                        "style": {
+                                            "display": "flex",
+                                            "align-items": "center",
+                                            "margin-bottom": "8px"
+                                        },
+                                        "children": [
+                                            {
+                                                "elmType": "span",
+                                                "style": {
                         {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='Ikke påbegynt', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='0%', '#000000', '')"
-                            },
-                            "txtContent": "0% = Ikke påbegynt"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Idénummer:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$ID]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "style": {
+                                            "font-weight": "bold",
+                                            "margin-right": "5px"
+                                        },
+                                        "txtContent": "Sendt inn av:"
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "txtContent": "[$Author.title]"
+                                    }
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Navn på idé:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Title]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "style": {
+                                            "font-weight": "bold",
+                                            "margin-right": "5px"
+                                        },
+                                        "txtContent": "Sektor:"
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "txtContent": "[$Sektor]"
+                                    }
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Sendt inn av:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Author.title]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "style": {
+                                            "font-weight": "bold",
+                                            "margin-right": "5px"
+                                        },
+                                        "txtContent": "Sendt inn:"
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "txtContent": "[$Created]"
+                                    }
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Sektor:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Sektor]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "style": {
+                                            "font-weight": "bold",
+                                            "margin-right": "5px"
+                                        },
+                                        "txtContent": "Sektoransvarlig:"
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "txtContent": "[$Sektoransvarlig.title]"
+                                    }
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Sendt inn:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Created]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "style": {
+                                            "font-weight": "bold",
+                                            "margin-right": "5px"
+                                        },
+                                        "txtContent": "Ansvarlig for oppfølging:"
+                                    },
+                                    {
+                                        "elmType": "span",
+                                        "txtContent": "[$Oppf_x00f8_lgingsansvarlig.title]"
+                                    }
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Sektoransvarlig:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Sektoransvarlig.title]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "div",
+                                        "style": {
+                                            "display": "flex",
+                                            "align-items": "center",
+                                            "margin-bottom": "8px"
+                                        },
+                                        "children": [
+                                            {
+                                                "elmType": "span",
+                                                "style": {
                         {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Ansvarlig for oppfølging:"
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": "[$Oppf_x00f8_lgingsansvarlig.title]"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "div",
+                                        "style": {
+                                            "display": "flex",
+                                            "align-items": "center",
+                                            "margin-bottom": "0px"
+                                        },
+                                        "children": [
+                                            {
+                                                "elmType": "span",
+                                                "style": {
+                                                    "font-weight": "bold",
+                                                    "margin-right": "5px"
+                                                },
+                                                "txtContent": "Fremdrift: "
+                                            },
+                                            {
+                                                "elmType": "span",
+                                                "txtContent": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elmType": "div",
+                                        "style": {
+                                            "display": "flex",
+                                            "flex-direction": "column",
+                                            "margin-bottom": "8px",
+                                            "margin-left": "20px"
+                                        },
+                                        "children": [
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='Ikke påbegynt', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='0%', '#000000', '')"
+                                                        },
+                                                        "txtContent": "0% = Ikke påbegynt"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='10%', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='10%', '#CAF0CC', '')"
+                                                        },
+                                                        "txtContent": "10% = Startet, men ikke kommet i gang"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='25%', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='25%', '#0078D4', '')"
+                                                        },
+                                                        "txtContent": "25% = Startet, mye gjenstår"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='50%', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='50%', '#4F6BED', '')"
+                                                        },
+                                                        "txtContent": "50% = Halvveis fullført"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='75%', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='75%', '#005E50', '')"
+                                                        },
+                                                        "txtContent": "75% = Nesten ferdig, kun finpuss/testing igjen"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "display": "flex",
+                                                    "align-items": "center",
+                                                    "margin-bottom": "2px"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-size": "12px",
+                                                            "margin-right": "6px"
+                                                        },
+                                                        "txtContent": "●"
+                                                    },
+                                                    {
+                                                        "elmType": "span",
+                                                        "style": {
+                                                            "font-weight": "=if([$Fremdrift]=='100%', 'bold', 'normal')",
+                                                            "color": "=if([$Fremdrift]=='100%', '#498205', '')"
+                                                        },
+                                                        "txtContent": "100% = Ferdigstilt og implementert"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
-                            "txtContent": "●"
-                        },
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='10%', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='10%', '#CAF0CC', '')"
-                            },
-                            "txtContent": "10% = Startet, men ikke kommet i gang"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
-                            },
-                            "txtContent": "●"
-                        },
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='25%', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='25%', '#0078D4', '')"
-                            },
-                            "txtContent": "25% = Startet, mye gjenstår"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
-                            },
-                            "txtContent": "●"
-                        },
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='50%', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='50%', '#4F6BED', '')"
-                            },
-                            "txtContent": "50% = Halvveis fullført"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
-                            },
-                            "txtContent": "●"
-                        },
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='75%', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='75%', '#005E50', '')"
-                            },
-                            "txtContent": "75% = Nesten ferdig, kun finpuss/testing igjen"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "display": "flex",
-                        "align-items": "center",
-                        "margin-bottom": "2px"
-                    },
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-size": "12px",
-                                "margin-right": "6px"
-                            },
-                            "txtContent": "●"
-                        },
-                        {
-                            "elmType": "span",
-                            "style": {
-                                "font-weight": "=if([$Fremdrift]=='100%', 'bold', 'normal')",
-                                "color": "=if([$Fremdrift]=='100%', '#498205', '')"
-                            },
-                            "txtContent": "100% = Ferdigstilt og implementert"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-{
-    "elmType": "div",
-    "children": [
-        {
-            "forEach": "personIterator in [$Interessenter]",
-            "elmType": "div",
-            "style": {
-                "padding": "20px 5px",
-                "position": "relative",
-                "left": "=if(loopIndex('personIterator') == 0, '0px',if(loopIndex('personIterator') % 2, '-'+ (28*Number(loopIndex('personIterator'))) +'px','-'+ (28*Number(loopIndex('personIterator'))) +'px'))"
-            },
-            "children": [
-                {
-                    "elmType": "img",
-                    "defaultHoverField": "[$personIterator]",
-                    "attributes": {
-                        "src": "=getUserImage([$personIterator.email], 'M')",
-                        "title": "[$personIterator.title]",
-                        "class": "sp-card-userThumbnail"
-                    },
-                    "style": {
-                        "position": "absolute",
-                        "border-radius": "50%",
-                        "margin": "18px 18px",
-                        "box-shadow": "rgba(0, 0, 0, 0.15) 4.95px 4.95px 4.6px",
-                        "display": "=if(length([$Approvers]) > 5 && loopIndex('personIterator') >= 4, 'none', '')"
-                    }
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "border-top-left-radius": "110px",
-                        "border-top-right-radius": "110px",
-                        "border-bottom": 0,
-                        "width": "108px",
-                        "height": "54px",
-                        "background-color": "=if((loopIndex('personIterator') % 2)==0,'','rgba(0, 0, 0, 0.2)')"
-                    },
-                    "attributes": {
-                        "class": "=if((loopIndex('personIterator') % 2)==0,'ms-bgColor-themePrimary','')"
-                    }
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "border-bottom-left-radius": "110px",
-                        "border-bottom-right-radius": "110px",
-                        "border-bottom": 0,
-                        "width": "108px",
-                        "height": "54px",
-                        "background-color": "=if((loopIndex('personIterator')  % 2)==1,'','rgba(0, 0, 0, 0.2)')"
-                    },
-                    "attributes": {
-                        "class": "=if((loopIndex('personIterator')  % 2)==1,'ms-bgColor-themePrimary','')"
-                    }
-                },
-                {
-                    "elmType": "div",
-                    "style": {
-                        "position": "relative",
-                        "width": "100%",
-                        "text-overflow": "ellipsis",
-                        "white-space": "nowrap",
-                        "overflow": "hidden",
-                        "text-align": "center",
-                        "top": "=if((loopIndex('personIterator') % 2)==0,'0px','-130px')"
-                    },
-                    "txtContent": "[$personIterator.title]"
-                }
-            ]
-        }
-    ]
-}
+                            {
+                                "elmType": "div",
+                                "children": [
+                                    {
+                                        "forEach": "personIterator in [$Interessenter]",
+                                        "elmType": "div",
+                                        "style": {
+                                            "padding": "20px 5px",
+                                            "position": "relative",
+                                            "left": "=if(loopIndex('personIterator') == 0, '0px',if(loopIndex('personIterator') % 2, '-'+ (28*Number(loopIndex('personIterator'))) +'px','-'+ (28*Number(loopIndex('personIterator'))) +'px'))"
+                                        },
+                                        "children": [
+                                            {
+                                                "elmType": "img",
+                                                "defaultHoverField": "[$personIterator]",
+                                                "attributes": {
+                                                    "src": "=getUserImage([$personIterator.email], 'M')",
+                                                    "title": "[$personIterator.title]",
+                                                    "class": "sp-card-userThumbnail"
+                                                },
+                                                "style": {
+                                                    "position": "absolute",
+                                                    "border-radius": "50%",
+                                                    "margin": "18px 18px",
+                                                    "box-shadow": "rgba(0, 0, 0, 0.15) 4.95px 4.95px 4.6px",
+                                                    "display": "=if(length([$Approvers]) > 5 && loopIndex('personIterator') >= 4, 'none', '')"
+                                                }
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "border-top-left-radius": "110px",
+                                                    "border-top-right-radius": "110px",
+                                                    "border-bottom": 0,
+                                                    "width": "108px",
+                                                    "height": "54px",
+                                                    "background-color": "=if((loopIndex('personIterator') % 2)==0,'','rgba(0, 0, 0, 0.2)')"
+                                                },
+                                                "attributes": {
+                                                    "class": "=if((loopIndex('personIterator') % 2)==0,'ms-bgColor-themePrimary','')"
+                                                }
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "border-bottom-left-radius": "110px",
+                                                    "border-bottom-right-radius": "110px",
+                                                    "border-bottom": 0,
+                                                    "width": "108px",
+                                                    "height": "54px",
+                                                    "background-color": "=if((loopIndex('personIterator')  % 2)==1,'','rgba(0, 0, 0, 0.2)')"
+                                                },
+                                                "attributes": {
+                                                    "class": "=if((loopIndex('personIterator')  % 2)==1,'ms-bgColor-themePrimary','')"
+                                                }
+                                            },
+                                            {
+                                                "elmType": "div",
+                                                "style": {
+                                                    "position": "relative",
+                                                    "width": "100%",
+                                                    "text-overflow": "ellipsis",
+                                                    "white-space": "nowrap",
+                                                    "overflow": "hidden",
+                                                    "text-align": "center",
+                                                    "top": "=if((loopIndex('personIterator') % 2)==0,'0px','-130px')"
+                                                },
+                                                "txtContent": "[$personIterator.title]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
