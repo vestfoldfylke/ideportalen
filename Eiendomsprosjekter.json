@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
   "hideSelection": false,
-  "height": "550px",
+  "height": "400px",
   "width": "290px",
   "formatter": {
     "elmType": "div",
@@ -22,15 +22,19 @@
           "action": "defaultClick"
         },
         "style": {
-          "padding": "10px 12px 10px 12px",
-          "border-bottom": "1px solid #eef1f4"
+          "padding": "10px 12px",
+          "border-bottom": "1px solid #eef1f4",
+          "background-color": "#DED5DF",
+          "width": "100%",
+          "box-sizing": "border-box",
+          "display": "block"
         },
         "children": [
           {
             "elmType": "div",
             "style": {
               "font-size": "15px",
-              "font-weight": "900",
+              "font-weight": "500",
               "color": "#1f2328",
               "line-height": "1.25",
               "white-space": "normal",
@@ -46,169 +50,10 @@
               "margin-top": "6px",
               "text-align": "center",
               "font-size": "12px",
-              "font-weight": "900",
-              "color": "#344054"
+              "font-weight": "400",
+              "color": "#000000"
             },
             "txtContent": "=if([$Prosjektleder.title]=='','—',[$Prosjektleder.title])"
-          },
-          {
-            "elmType": "div",
-            "style": {
-              "margin-top": "4px",
-              "text-align": "center",
-              "font-size": "12px",
-              "font-weight": "900",
-              "color": "#667085"
-            },
-            "children": [
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Ikke startet','block','none')"
-                },
-                "txtContent": "=if(toString([$IS_Slutt])=='','—',substring(toString([$IS_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Ikke startet','block','none')"
-                },
-                "txtContent": "=if(toString([$IS_Slutt])=='','—',substring(toString([$IS_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Ikke startet','block','none')"
-                },
-                "txtContent": "=if(toString([$IS_Slutt])=='','—',substring(toString([$IS_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avklare','block','none')"
-                },
-                "txtContent": "=if(toString([$AV_Slutt])=='','—',substring(toString([$AV_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avklare','block','none')"
-                },
-                "txtContent": "=if(toString([$AV_Slutt])=='','—',substring(toString([$AV_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avklare','block','none')"
-                },
-                "txtContent": "=if(toString([$AV_Slutt])=='','—',substring(toString([$AV_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Konsept','block','none')"
-                },
-                "txtContent": "=if(toString([$KO_Slutt])=='','—',substring(toString([$KO_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Konsept','block','none')"
-                },
-                "txtContent": "=if(toString([$KO_Slutt])=='','—',substring(toString([$KO_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Konsept','block','none')"
-                },
-                "txtContent": "=if(toString([$KO_Slutt])=='','—',substring(toString([$KO_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Detaljprosjektering','block','none')"
-                },
-                "txtContent": "=if(toString([$DP_Slutt])=='','—',substring(toString([$DP_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Detaljprosjektering','block','none')"
-                },
-                "txtContent": "=if(toString([$DP_Slutt])=='','—',substring(toString([$DP_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Detaljprosjektering','block','none')"
-                },
-                "txtContent": "=if(toString([$DP_Slutt])=='','—',substring(toString([$DP_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Utførelse','block','none')"
-                },
-                "txtContent": "=if(toString([$UF_Slutt])=='','—',substring(toString([$UF_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Utførelse','block','none')"
-                },
-                "txtContent": "=if(toString([$UF_Slutt])=='','—',substring(toString([$UF_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Utførelse','block','none')"
-                },
-                "txtContent": "=if(toString([$UF_Slutt])=='','—',substring(toString([$UF_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Overlevering','block','none')"
-                },
-                "txtContent": "=if(toString([$OV_Slutt])=='','—',substring(toString([$OV_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Overlevering','block','none')"
-                },
-                "txtContent": "=if(toString([$OV_Slutt])=='','—',substring(toString([$OV_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Overlevering','block','none')"
-                },
-                "txtContent": "=if(toString([$OV_Slutt])=='','—',substring(toString([$OV_Slutt]),11,15))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avsluttet','block','none')"
-                },
-                "txtContent": "=if(toString([$Avsluttet_Slutt])=='','—',substring(toString([$Avsluttet_Slutt]),8,10))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avsluttet','block','none')"
-                },
-                "txtContent": "=if(toString([$Avsluttet_Slutt])=='','—',substring(toString([$Avsluttet_Slutt]),4,7))"
-              },
-              {
-                "elmType": "div",
-                "style": {
-                  "display": "=if([$Fase]=='Avsluttet','block','none')"
-                },
-                "txtContent": "=if(toString([$Avsluttet_Slutt])=='','—',substring(toString([$Avsluttet_Slutt]),11,15))"
-              }
-            ]
           },
           {
             "elmType": "div",
@@ -244,7 +89,7 @@
                 "elmType": "div",
                 "style": {
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "color": "#4a4a4a"
                 },
                 "txtContent": "Fase"
@@ -286,7 +131,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Ikke startet','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Ikke startet','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -311,7 +156,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Avklare','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Avklare','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -336,7 +181,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Konsept','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Konsept','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -361,7 +206,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Detaljprosjektering','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Detaljprosjektering','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -386,7 +231,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Utførelse','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Utførelse','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -411,7 +256,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Overlevering','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Overlevering','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -436,7 +281,7 @@
                   "align-items": "center",
                   "justify-content": "center",
                   "font-size": "12px",
-                  "font-weight": "900",
+                  "font-weight": "300",
                   "background-color": "=if([$Fase]=='Avsluttet','#0e5f76','#f3f4f6')",
                   "color": "=if([$Fase]=='Avsluttet','white','#667085')",
                   "border": "1px solid rgba(0,0,0,0.10)",
@@ -481,7 +326,7 @@
                   {
                     "elmType": "div",
                     "style": {
-                      "font-weight": "900",
+                      "font-weight": "300",
                       "color": "#3b3f45",
                       "font-size": "12px"
                     },
@@ -496,7 +341,7 @@
                       "padding": "2px 8px",
                       "border-radius": "999px",
                       "font-size": "12px",
-                      "font-weight": "900",
+                      "font-weight": "300",
                       "background-color": "#f3f4f6",
                       "color": "#344054",
                       "border": "1px solid rgba(0,0,0,0.08)",
@@ -532,18 +377,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "Er budsjett vedtatt i budsjett og økonomiplan for kommende periode?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_IS_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_IS_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_IS_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -564,18 +409,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "Er start og sluttdato for avklaringsfasen satt?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_IS_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_IS_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_IS_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -596,18 +441,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "Har prosjektleder fått frigjort tid til å gjennomføre avklaringsfasen?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_IS_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_IS_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_IS_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -639,18 +484,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "2.1 Er sjekkliste for oppdragsbeskrivelse fylt ut og diskutert"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AV_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AV_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AV_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -671,18 +516,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "2.2 Er IKT, virksomhetsledelse, politiske råd, renhold og driftspersonell involvert?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AV_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AV_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AV_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -703,18 +548,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "2.3 Har prosjektleder prioritert tid til å gjennomføre konseptfasen"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AV_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AV_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AV_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -746,18 +591,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "3.1 Er byggherrens SHA-plan godkjent"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_KO_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_KO_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_KO_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -778,18 +623,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "3.2 Er tilbudsdokumenter godkjent?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_KO_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_KO_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_KO_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -810,18 +655,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "3.3 Har prosjektleder prioritert tid til å gjennomføre detaljprosjektering?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_KO_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_KO_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_KO_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -853,18 +698,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "4.1 Er kontrakt signert?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_DP_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_DP_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_DP_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -885,18 +730,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "4.2 Er risikovurdering og SHA-plan oppdatert?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_DP_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_DP_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_DP_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -917,18 +762,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "4.3 Har prosjektleder prioritert tid til å følge opp prosjektet i utførelsesfasen?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_DP_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_DP_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_DP_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -960,18 +805,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "5.1 Er sjekkliste for oppstart drift fylt ut?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_UF_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_UF_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_UF_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -992,18 +837,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "5.2 Er det skrevet evalueringsrapporter av entreprenørene?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_UF_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_UF_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_UF_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -1024,18 +869,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "5.3 Har prosjektleder prioritert tid til å gjennomføre overlevering av prosjektet?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_UF_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_UF_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_UF_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -1067,18 +912,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "6.1 Er avslutningsskjema godkjent?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_OV_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_OV_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_OV_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -1099,18 +944,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "6.2 Er alle innestående beløp utbetalt til entreprenørene?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_OV_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_OV_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_OV_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -1131,18 +976,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "6.3 Har prosjektleder prioritert tid til å avslutte prosjektet?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_OV_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_OV_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_OV_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -1174,18 +1019,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "7.1 Er avslutningsskjema godkjent?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AS_01]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AS_01]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AS_01]==true,'✓','○')"
                       }
                     ]
                   },
@@ -1206,18 +1051,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "7.2 Er det skrevet sluttrapport med sluttregnskap?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AS_02]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AS_02]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AS_02]==true,'✓','○')"
                       }
                     ]
                   },
@@ -1238,18 +1083,18 @@
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900"
+                          "font-weight": "300"
                         },
                         "txtContent": "7.3 Er alle prosjektdokumenter arkivert?"
                       },
                       {
                         "elmType": "span",
                         "style": {
-                          "font-weight": "900",
+                          "font-weight": "300",
                           "font-size": "14px",
                           "color": "=if([$CL_AS_03]==true,'#107c10','#a4262c')"
                         },
-                        "txtContent": "=if([$CL_AS_03]==true,'✓','✗')"
+                        "txtContent": "=if([$CL_AS_03]==true,'✓','○')"
                       }
                     ]
                   }
@@ -1272,8 +1117,8 @@
           {
             "elmType": "a",
             "attributes": {
-                "href": "=toString([$TeamsDokUrl])",
-                "target": "_blank"
+              "href": "=toString([$TeamsDokUrl])",
+              "target": "_blank"
             },
             "style": {
               "display": "=if(toString([$TeamsDokUrl])=='','none','flex')",
@@ -1283,7 +1128,7 @@
               "background-color": "#0e5f76",
               "color": "white",
               "padding": "8px 10px",
-              "font-weight": "900",
+              "font-weight": "300",
               "text-decoration": "none",
               "border-radius": "10px",
               "flex-grow": "1"
@@ -1316,7 +1161,7 @@
               "background-color": "#0e5f76",
               "color": "white",
               "padding": "8px 10px",
-              "font-weight": "900",
+              "font-weight": "300",
               "text-decoration": "none",
               "border-radius": "10px",
               "flex-grow": "1"
